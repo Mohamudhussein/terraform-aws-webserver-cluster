@@ -103,6 +103,7 @@ resource "aws_launch_template" "this" {
               <html>
                 <head><title>${var.cluster_name}</title></head>
                 <body>
+                  <p>Environment: ${var.environment}</p>
                   <h1>${var.server_text}</h1>
                   <p>Cluster: ${var.cluster_name}</p>
                 </body>
